@@ -14,7 +14,7 @@ docker run \
     kriskbx/docker-imap-backup
 ```
 
-… or via volume (might only work on linux because file systems and permissions 🤷):
+… or via volume:
 
 ```bash
 docker run \
