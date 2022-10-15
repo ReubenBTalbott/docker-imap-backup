@@ -31,12 +31,12 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Login to GitHub Container Registry
-        uses: docker/login-action@v2
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.PAT_PUSH }}
+#        name: Login to GitHub Container Registry
+#        uses: docker/login-action@v2
+#        with:
+#          registry: ghcr.io
+#          username: ${{ github.repository_owner }}
+#          password: ${{ secrets.PAT_PUSH }}
       -
         name: Build and push
         uses: docker/build-push-action@v3
@@ -46,4 +46,4 @@ jobs:
           push: true
           tags: |
             reubentalbott/imap-backup:latest
-            ghcr.io/reubenbtalbott/docker-imap-backup:latest
+#            ghcr.io/reubenbtalbott/docker-imap-backup:latest
