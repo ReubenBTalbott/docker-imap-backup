@@ -46,4 +46,4 @@ jobs:
           push: true
           tags: |
             reubentalbott/imap-backup:latest
-#            ghcr.io/reubenbtalbott/docker-imap-backup:latest
+            ghcr.io/reubenbtalbott/docker-imap-backup:latest
