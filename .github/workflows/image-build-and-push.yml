@@ -47,3 +47,6 @@ jobs:
           tags: |
             reubentalbott/imap-backup:latest
             ghcr.io/reubenbtalbott/docker-imap-backup:latest
+      -
+       name: Prevent GitHub from disabling task
+       uses: gautamkrishnar/keepalive-workflow@v1
