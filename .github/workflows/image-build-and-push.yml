@@ -1,4 +1,6 @@
 name: build-images-and-push
+permissions:
+  contents: write
 
 on:
   push:
