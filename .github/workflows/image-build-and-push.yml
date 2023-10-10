@@ -1,6 +1,6 @@
 name: build-images-and-push
-permissions:
-  contents: write
+#permissions:
+#  contents: write
 
 on:
   push:
@@ -50,5 +50,5 @@ jobs:
             reubentalbott/imap-backup:latest
             ghcr.io/reubenbtalbott/docker-imap-backup:latest
       -
-       name: Prevent GitHub from disabling task
-       uses: gautamkrishnar/keepalive-workflow@v1
+      # name: Prevent GitHub from disabling task
+      # uses: gautamkrishnar/keepalive-workflow@v1
